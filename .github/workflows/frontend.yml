@@ -1,36 +1,8 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@ZiMaCoffee 
-zeph123
-/
-Lab6
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-Lab6/.github/workflows/frontend.yml
-
-zeph123 fixed platforms
-Latest commit 5004759 5 days ago
- History
- 0 contributors
-70 lines (61 sloc)  2.26 KB
-
-name: CI
+ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
