@@ -49,4 +49,8 @@ jobs:
           push: true
           tags: |
             ${{secrets.DOCKER_HUB_USERNAME}}/lab6:latest
-      
+      # Przenies cache'a
+      - name: Move cache
+        run: |
+          rm -rf ${{secrets.DOCKER_HUB_USERNAME}}/lab6
+          mv ${{secrets.DOCKER_HUB_USERNAME}}/lab6-new ${{secrets.DOCKER_HUB_USERNAME}}/lab6
